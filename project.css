@@ -1,0 +1,574 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f4fa;
+    color: #22213b;
+}
+
+
+
+.navbar {
+    background: #17152f;
+    padding: 22px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 35px;
+    padding:0px 400px 0px 0px;
+
+
+}
+.navbar i{
+    padding: 0px 50px 0px 0px;
+    font-size: 60px;
+}
+.logo span,
+footer span {
+    color: #a78bfa;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.nav-links a:hover {
+    color: #a78bfa;
+}
+
+.nav-btn {
+    background: #7955d9;
+    color: white;
+    padding: 13px 22px;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+
+
+/* HERO SECTION */
+
+.hero {
+    min-height: 570px;
+    background: linear-gradient(120deg, #17152f, #393064, #7353bd);
+    color: white;
+    padding: 75px 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero-content {
+    max-width: 570px;
+}
+
+.small-title {
+    color: #ad96f5;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #c4b5fd;
+}
+
+.hero-text {
+    color: #d7d2ed;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.main-btn {
+    display: inline-block;
+    padding: 15px 27px;
+    background: white;
+    color: #6545a8;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.main-btn:hover {
+    background: #c4b5fd;
+}
+
+.hero-details {
+    display: flex;
+    gap: 45px;
+    margin-top: 45px;
+}
+
+.hero-details h2 {
+    color: #c4b5fd;
+    font-size: 24px;
+}
+
+.hero-details p {
+    color: #ddd8ee;
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+
+
+.pic{
+    width: 80%;
+    max-width: 1300px;
+    height: 500px;
+    height:350px;
+    position: relative;
+    top:-60px;
+    right: -50px;
+    
+}
+.pic img{
+    width:100%;
+    height:450px;
+    max-width:600px;
+    object-fit: contain;
+
+}
+
+
+.dashboard {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 45px 8%;
+}
+
+.stat-card {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    background: white;
+    padding: 25px;
+    width: 250px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px #22213b10;
+    transition: 0.3s;
+}
+
+.stat-card:hover {
+    transform: translateY(-7px);
+}
+
+.stat-card h2 {
+    font-size: 28px;
+}
+
+.stat-card p {
+    color: gray;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.stat-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.purple-icon {
+    background: #eee8ff;
+    color: #7955d9;
+}
+
+.green-icon {
+    background: #e0f6eb;
+    color: #20a56b;
+}
+
+.red-icon {
+    background: #ffe8e5;
+    color: #e74c3c;
+}
+
+
+/* PARKING SECTION */
+
+.parking-section {
+    padding: 80px 10%;
+    text-align: center;
+    background: white;
+}
+
+.section-heading h2 {
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+.section-heading > p:last-child {
+    color: gray;
+}
+
+
+/* LEGEND */
+
+.legend {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 35px 0;
+}
+
+.legend span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+}
+
+.green-box,
+.red-box,
+.blue-box {
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    border-radius: 4px;
+}
+
+.green-box {
+    background: #20a56b;
+}
+
+.red-box {
+    background: #e74c3c;
+}
+
+.blue-box {
+    background: #3867d6;
+}
+
+
+/* PARKING CARDS */
+
+.slots {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.slot {
+    padding: 30px 15px;
+    border-radius: 16px;
+    color: white;
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.slot h3 {
+    font-size: 20px;
+    margin: 12px 0;
+}
+
+.slot p {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.slot small {
+    font-size: 11px;
+}
+
+.slot-number {
+    font-size: 32px;
+    font-weight: bold;
+    opacity: 0.9;
+}
+
+.available {
+    background: linear-gradient(135deg, #20b47b, #118354);
+}
+
+.occupied {
+    background: linear-gradient(135deg, #f06458, #d94338);
+}
+
+.my-slot {
+    background: linear-gradient(135deg, #5488ee, #2854b6);
+}
+
+.available:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px #20a56b44;
+}
+
+
+/* BOOKING SECTION */
+
+.booking-section {
+    padding: 85px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 55px;
+    background: #f0edfa;
+}
+
+.booking-info {
+    max-width: 450px;
+}
+
+.booking-info h2 {
+    font-size: 38px;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+.booking-info > p:not(.small-title) {
+    color: gray;
+    line-height: 1.8;
+}
+
+.steps {
+    margin-top: 30px;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 20px;
+}
+
+.step span {
+    background: #7955d9;
+    color: white;
+    padding: 13px;
+    border-radius: 9px;
+    font-weight: bold;
+}
+
+.step p {
+    font-size: 14px;
+}
+
+
+/* FORM */
+
+.form-box {
+    background: white;
+    width: 430px;
+    padding: 35px;
+    border-radius: 18px;
+    box-shadow: 0 10px 35px #22213b15;
+}
+
+.form-box h2 {
+    margin-bottom: 10px;
+}
+
+.form-box > p {
+    color: gray;
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    margin-top: 18px;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+}
+
+input:focus,
+select:focus {
+    border-color: #7955d9;
+}
+
+.book-btn,
+.cancel-btn {
+    width: 100%;
+    padding: 15px;
+    margin-top: 25px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.book-btn {
+    background: #7955d9;
+}
+
+.book-btn:hover {
+    background: #51359c;
+}
+
+.cancel-btn {
+    background: #e74c3c;
+}
+
+.cancel-btn:hover {
+    background: #c0392b;
+}
+
+button:disabled {
+    background: gray;
+    cursor: not-allowed;
+}
+
+#result {
+    color: #16834e;
+    text-align: center;
+    line-height: 1.8;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+
+/* FOOTER */
+
+footer {
+    background: #17152f;
+    color: white;
+    text-align: center;
+    padding: 35px 15px;
+}
+
+footer h2 {
+    margin-bottom: 12px;
+}
+
+footer p {
+    color: #ccc8df;
+    margin-bottom: 10px;
+}
+
+.footer-line {
+    height: 1px;
+    background: #ffffff33;
+    max-width: 600px;
+    margin: 25px auto;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media(min-width:320px) and (max-width:425px){
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .pic{
+        width: 100%;
+        margin-right: 90px;
+    }
+
+    .hero-details {
+        justify-content: center;
+    }
+
+    .booking-section {
+        flex-direction: column;
+    }
+
+    .booking-info {
+        max-width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .logo {
+        font-size: 38px;
+        padding:0px 20px 0px 0px;;
+    }
+
+    .navbar i {
+        font-size: 40px;
+        padding-left: -90px;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .nav-links a {
+        margin: 0;
+    }
+
+    .nav-btn {
+        padding: 10px 18px;
+    }
+
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .hero-details {
+        gap: 20px;
+    }
+
+    .slots {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stat-card {
+        width: 100%;
+    }
+
+    .form-box {
+        width: 100%;
+    }
+
+    .section-heading h2 {
+        font-size: 26px;
+    }
+
+    .booking-info h2 {
+        font-size: 29px;
+    }
+
+}
